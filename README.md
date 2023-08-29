@@ -1,6 +1,6 @@
 # TFG-LIME
 
-==========================================================                  C A S T E L L A N O                    =================================================================
+=======================                  C A S T E L L A N O                    =========================
 
 Trabajo final de grado. Explicación LIME en redes neuronales para reconocimiento facial.
 
