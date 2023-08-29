@@ -1,2 +1,2 @@
 # TFG-LIME
-Final Degree Project. LIME EXPLANATION FOR NEURAL NETWORKS IN FACIAL RECOGNITION.
+Final Degree Project. Lime explanation for neural networks in facial recognition.
