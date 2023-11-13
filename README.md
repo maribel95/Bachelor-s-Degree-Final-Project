@@ -74,7 +74,7 @@ https://github.com/italojs/facial-landmarks-recognition/blob/master/shape_predic
 
 
 
-# Datos
+# Data
 
 The data was provided by the researcher Fernando Alonso Fernández. It's basically a subset of the VGG2Face database. They belong in this drive folder:https://drive.google.com/drive/folders/1cu7eGTg2zqQPEyreqvt4BGLWGca5MNB9
 
