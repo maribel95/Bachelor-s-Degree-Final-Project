@@ -80,6 +80,15 @@ Data processing follows the following flow of actions:
 
 <img width="775" alt="Captura de pantalla 2023-11-15 a las 19 50 08" src="https://github.com/maribel95/TFG-LIME/assets/61268027/9762c543-cf04-45e8-95f8-d012ed6533cb">
 
+### Dendrogram creation
+
+To compare the heat maps, representation using dendrograms has been chosen. To create these, it is done using the Kullback-Leibler divergence. It is a distance metric that measures the loss of information between two probabilistic distributions. It is used in the field of information theory, statistics, machine learning and inference.
+KL is used to see how similar two distribution functions are, where large distances penalize more. The measure of Euclidean distance or the absolute value of the difference does not have a probabilistic meaning, so they are discarded in the scope of this project.
+
+### Heatmap comparison example
+
+
+<img width="775" alt="Captura de pantalla 2023-11-15 a las 19 54 34" src="https://github.com/maribel95/TFG-LIME/assets/61268027/df69621a-41b8-4ee4-8b73-ddfe566a14ec">
 
 
 
