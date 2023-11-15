@@ -1,4 +1,4 @@
-# TFG-LIME
+# LIME explanation in neural networks for facial recognition.
 
 <img width="978" alt="Captura de pantalla 2023-11-15 a las 17 01 46" src="https://github.com/maribel95/TFG-LIME/assets/61268027/5b8758ab-9d33-49b1-831f-f70c81a9440c">
 
