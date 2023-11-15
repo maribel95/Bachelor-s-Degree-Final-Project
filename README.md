@@ -38,11 +38,11 @@ Por lo general, los espacios de características con los que los modelos de apre
 En el contexto de la clasificación de imágenes, la porción de vecindad se genera a través de varias muestras con diferentes combinaciones de regiones ocluidas. Luego se analiza la importancia que tienen para la imagen original. De manera que si el parche tapaba una parte importante, esto afecta directamente a la predicción de la clase. Se utiliza un vector binario que indica la presencia o ausencia de esos parches en las nuevas imágenes distorsionadas.
 
 El proceso de tratamiento de datos es el siguiente: 
-<img width="975" alt="Captura de pantalla 2023-11-15 a las 10 44 46" src="https://github.com/maribel95/TFG-LIME/assets/61268027/45675563-14aa-4dcd-91e3-611d4ffda69e">
+<img width="875" alt="Captura de pantalla 2023-11-15 a las 10 44 46" src="https://github.com/maribel95/TFG-LIME/assets/61268027/45675563-14aa-4dcd-91e3-611d4ffda69e">
 
 Y el proceso de tratamiento de imágenes es este:
 
-<img width="983" alt="Captura de pantalla 2023-11-15 a las 10 36 52" src="https://github.com/maribel95/TFG-LIME/assets/61268027/0440394e-6ed2-449f-b3cc-eb18f9525da2">
+<img width="883" alt="Captura de pantalla 2023-11-15 a las 10 36 52" src="https://github.com/maribel95/TFG-LIME/assets/61268027/0440394e-6ed2-449f-b3cc-eb18f9525da2">
 
 
 ### Normalización imágenes
@@ -57,7 +57,7 @@ Se utiliza un enfoque que involucra un descriptor que detecta 68 landmarks facia
 
 Los resultados serían los siguientes:
 
-<img width="985" alt="Captura de pantalla 2023-11-15 a las 10 48 04" src="https://github.com/maribel95/TFG-LIME/assets/61268027/11e75800-0183-487b-ab27-5e0b0be0d276">
+<img width="885" alt="Captura de pantalla 2023-11-15 a las 10 48 04" src="https://github.com/maribel95/TFG-LIME/assets/61268027/11e75800-0183-487b-ab27-5e0b0be0d276">
 
 
 # Recursos del proyecto:
