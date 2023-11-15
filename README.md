@@ -31,6 +31,34 @@ The following image shows the entire process to follow:
 
 <img width="985" alt="Captura de pantalla 2023-11-15 a las 11 10 21" src="https://github.com/maribel95/TFG-LIME/assets/61268027/a68f3d76-b5ac-46e7-88ac-fc387f7884f9">
 
+### Explicaciones LIME
+In general, the feature spaces that deep learning models deal with have non-linear boundaries and high complexity. To explain these models, LIME is used, which is a novel explainability technique that first appeared in 2016 and whose intention is to clarify the predictions of any classifier. The idea is to build a simple and easy-to-interpret local model based on particular predictions. Based on various representative samples, the results are extrapolated to a more general level, thus giving a global explanation of the model.
+
+- The first thing to do is generate several disturbed samples around it. These samples present slight variations with respect to the original, so they are all located in a very close dimensional space.
+- Next, a kernel function is used to assign weights to the subset of perturbed samples, according to the distance from the original. In this way, you can know which samples are most similar to the initial instance.
+- The next step is to train a simple model. This generates a result for the particular subset of data, giving an interpretable, albeit very specific, explanation. Among the local model options are linear regression, decision trees or those based on rules.
+- Finally, the coefficients produced by the model are analyzed, showing those factors that contribute most to the prediction. Therefore, the most important characteristics that define the original instance are obtained.
+
+In the context of image classification, the neighborhood portion is generated through multiple samples with different combinations of occluded regions. Then the importance they have for the original image is analyzed. So if the patch covered an important part, this directly affects the class prediction. A binary vector is used that indicates the presence or absence of those patches in the new distorted images.
+
+The data processing process is as follows:
+
+<img width="775" alt="Captura de pantalla 2023-11-15 a las 17 46 58" src="https://github.com/maribel95/TFG-LIME/assets/61268027/0dc611e3-aef8-4cd8-b47f-473ca66ff0a4">
+
+
+And the image processing process is this:
+
+<img width="775" alt="Captura de pantalla 2023-11-15 a las 17 46 50" src="https://github.com/maribel95/TFG-LIME/assets/61268027/a1256d66-b7d4-45d7-9481-686af3054e67">
+
+
+
+
+
+
+
+
+
+
 
 
 #
