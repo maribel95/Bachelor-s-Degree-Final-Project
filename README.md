@@ -41,8 +41,6 @@ El proceso de tratamiento de datos es el siguiente:
 <img width="775" alt="Captura de pantalla 2023-11-15 a las 16 21 45" src="https://github.com/maribel95/TFG-LIME/assets/61268027/82e092e8-48ab-4525-8315-0136e9d3080f">
 
 
-<img width="875" alt="Captura de pantalla 2023-11-15 a las 10 44 46" src="https://github.com/maribel95/TFG-LIME/assets/61268027/45675563-14aa-4dcd-91e3-611d4ffda69e">
-
 Y el proceso de tratamiento de imágenes es este:
 
 <img width="775" alt="Captura de pantalla 2023-11-15 a las 10 36 52" src="https://github.com/maribel95/TFG-LIME/assets/61268027/0440394e-6ed2-449f-b3cc-eb18f9525da2">
@@ -61,6 +59,19 @@ Se utiliza un enfoque que involucra un descriptor que detecta 68 landmarks facia
 Los resultados serían los siguientes:
 
 <img width="775" alt="Captura de pantalla 2023-11-15 a las 10 48 04" src="https://github.com/maribel95/TFG-LIME/assets/61268027/11e75800-0183-487b-ab27-5e0b0be0d276">
+
+### Creación mapas de calor
+
+Los mapas de calor son muy útiles ya que facilitan la comprensión de gran cantidad de datos, de manera que quedan resumidos en patrones que muestran relaciones, variaciones o perturbaciones. Solo se utilizan datos numéricos en las trazas de ambos ejes en la cuadrícula.
+En el ámbito de este trabajo, se procesa la distribución de las máscaras obtenidas del conjunto de la base de datos. Habrá un eje que representará la altura y otro la anchura. La naturaleza matricial del mapa de calor es equivalente a la de una imagen.
+
+Las ventajas de un mapa de calor son las siguientes:
+<img width="775" alt="Captura de pantalla 2023-11-15 a las 16 40 53" src="https://github.com/maribel95/TFG-LIME/assets/61268027/7303b5e4-72f9-4c63-82ee-8408491b8c2a">
+
+
+El procesamiento de los datos sigue el siguiente flujo de acciones:
+
+<img width="775" alt="Captura de pantalla 2023-11-15 a las 16 40 34" src="https://github.com/maribel95/TFG-LIME/assets/61268027/80ab8c8c-bedd-4ff1-b8be-57d1ea2b619b">
 
 
 # Recursos del proyecto:
