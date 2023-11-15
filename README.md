@@ -42,7 +42,7 @@ El proceso de tratamiento de datos es el siguiente:
 
 Y el proceso de tratamiento de imágenes es este:
 
-<img width="883" alt="Captura de pantalla 2023-11-15 a las 10 36 52" src="https://github.com/maribel95/TFG-LIME/assets/61268027/0440394e-6ed2-449f-b3cc-eb18f9525da2">
+<img width="783" alt="Captura de pantalla 2023-11-15 a las 10 36 52" src="https://github.com/maribel95/TFG-LIME/assets/61268027/0440394e-6ed2-449f-b3cc-eb18f9525da2">
 
 
 ### Normalización imágenes
@@ -57,7 +57,7 @@ Se utiliza un enfoque que involucra un descriptor que detecta 68 landmarks facia
 
 Los resultados serían los siguientes:
 
-<img width="885" alt="Captura de pantalla 2023-11-15 a las 10 48 04" src="https://github.com/maribel95/TFG-LIME/assets/61268027/11e75800-0183-487b-ab27-5e0b0be0d276">
+<img width="785" alt="Captura de pantalla 2023-11-15 a las 10 48 04" src="https://github.com/maribel95/TFG-LIME/assets/61268027/11e75800-0183-487b-ab27-5e0b0be0d276">
 
 
 # Recursos del proyecto:
@@ -75,7 +75,7 @@ A continuación se muestra cómo se han obtenido de manera individual cada recur
 
 Los modelos se descargaron de este repositorio de github: https://github.com/deepinsight/insightface/tree/master/model_zoo
 Se escogieron las ResNet entrenadas con ArcFace. En la imágen se pueden ver los modelos escogidos. Todas menos R100 Casia y R100 MS1MV2. 
-<img width="849" alt="Captura de pantalla 2023-08-29 a las 16 15 39" src="https://github.com/maribel95/TFG-LIME/assets/61268027/cd569c30-6cad-4af6-92e4-0a7b1a5a55c5">
+<img width="749" alt="Captura de pantalla 2023-08-29 a las 16 15 39" src="https://github.com/maribel95/TFG-LIME/assets/61268027/cd569c30-6cad-4af6-92e4-0a7b1a5a55c5">
 
 
 ### resources
