@@ -73,6 +73,17 @@ El procesamiento de los datos sigue el siguiente flujo de acciones:
 
 <img width="775" alt="Captura de pantalla 2023-11-15 a las 16 40 34" src="https://github.com/maribel95/TFG-LIME/assets/61268027/80ab8c8c-bedd-4ff1-b8be-57d1ea2b619b">
 
+### Creación dendrogramas
+
+Para la comparación de los mapas de calor se ha optado por la representación mediante dendrogramas. Para la creación de estos, se hace mediante la divergencia de Kullback-Leibler. Es una métrica de distancia que mide la pérdida de información entre dos distribuciones probabilísticas. Se utiliza en el ámbito de la teoría de la información, la estadística, aprendizaje automático e inferencia.
+KL sirve para ver cuánto se parecen dos funciones de distribución, donde penalizan más las grandes distancias. La medida de la distancia euclídea o el valor absoluto de la diferencia no tienen un significado probabilístico, así que quedan descartadas en el ámbito de este proyecto.
+
+### Ejemplo comparación mapas de calor
+
+
+<img width="775" alt="Captura de pantalla 2023-11-15 a las 16 47 39" src="https://github.com/maribel95/TFG-LIME/assets/61268027/67b574d4-5251-4dd6-9603-51261002336c">
+
+
 
 # Recursos del proyecto:
 
