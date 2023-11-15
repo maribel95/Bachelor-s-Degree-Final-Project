@@ -62,10 +62,23 @@ An approach is used that involves a descriptor that detects 68 facial landmarks.
 
 The results would be the following:
 
+<img width="775" alt="Captura de pantalla 2023-11-15 a las 19 35 43" src="https://github.com/maribel95/TFG-LIME/assets/61268027/6bbd3b60-f767-415c-8a59-37985eaef9aa">
+
+
+### Heatmaps creation
+
+Heat maps are very useful as they facilitate the understanding of large amounts of data, so that they are summarized in patterns that show relationships, variations or disturbances. Only numerical data is used in the traces of both axes on the grid.
+In the scope of this work, the distribution of the masks obtained from the entire database is processed. There will be one axis that will represent the height and another the width. The matrix nature of the heat map is equivalent to that of an image.
+
+The advantages of a heat map are the following:
+<img width="775" alt="Captura de pantalla 2023-11-15 a las 19 51 33" src="https://github.com/maribel95/TFG-LIME/assets/61268027/a3995f78-510c-4d14-8e23-a6a4007b0ebb">
 
 
 
 
+Data processing follows the following flow of actions:
+
+<img width="775" alt="Captura de pantalla 2023-11-15 a las 19 50 08" src="https://github.com/maribel95/TFG-LIME/assets/61268027/9762c543-cf04-45e8-95f8-d012ed6533cb">
 
 
 
