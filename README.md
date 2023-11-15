@@ -20,8 +20,8 @@ Para poder poder llevar a cabo el estudio, se ha seguido un flujo de trabajo ord
 Las tareas a realizar son las siguientes: 
 
 - [X] Creación máscaras LIME.
-- [X] Normalización caras y máscaras
-- [X] Creación mapas de calor
+- [X] Normalización caras y máscaras.
+- [X] Creación mapas de calor.
 - [X] Creación gráficos dendrogramas.
 
 En la siguiente imagen queda reflejado todo el proceso a seguir:
@@ -44,7 +44,22 @@ Y el proceso de tratamiento de imágenes es este:
 <img width="985" alt="Captura de pantalla 2023-11-15 a las 10 48 04" src="https://github.com/maribel95/TFG-LIME/assets/61268027/9805cdbf-22c0-4bbd-99ef-5e989485a4f2">
 
 
-## Recursos del proyecto:
+### Normalización imágenes
+
+Una vez obtenidas las explicaciones LIME, el siguiente paso es la normalización para alinear y estandarizar las caras. Se busca reducir la variabilidad en las poses y en las expresiones faciales, de manera que todas las imágenes mantengan una misma orientación y alineación.
+
+En esta fase se deben realizar las siguientes tareas:
+- [X] Detección facial. El primer paso para la normalización es aplicar un detector de caras que focalice la persona e ignore objetos que puedan suponer una distracción a la ahora de aplicar landmarks. En este caso se utiliza el detector de caras Haarcascade de la librería de OpenCV de Python.
+- [X] Detección Landmarks. La identificación exacta de puntos de referencia dentro de la cara es el segundo paso para normalizar. Se aplican detectores de referencias faciales que colocan los rasgos en una plantilla uniforme e idéntica para todos los demás rostros.
+Se utiliza un enfoque que involucra un descriptor que detecta 68 landmarks faciales. Se adapta a cada cara distinta, centrándose en los puntos más representativos: boca, ceja derecha e izquierda, ojo derecho e izquierdo, nariz y mandíbula.
+- [X] Creación malla mediante triangularización Delaunay. El último paso es la creación de una malla formada por triángulos que cumplan la propiedad de Delaunay y que conecte los puntos de referencia de la cara. Los landmarks actúan como puntos de control, son los conectores de los vértices y es alrededor de estos donde se construyen los triángulos.
+
+Los resultados serían los siguientes:
+
+<img width="985" alt="Captura de pantalla 2023-11-15 a las 10 48 04" src="https://github.com/maribel95/TFG-LIME/assets/61268027/11e75800-0183-487b-ab27-5e0b0be0d276">
+
+
+# Recursos del proyecto:
 
 Dentro de la carpeta del proyecto principal deben estar estas tres carpetas, que no están subidas en el repositorio debido a contar con un peso excesivo de memoria.
 - Models
