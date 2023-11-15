@@ -1,5 +1,38 @@
 # TFG-LIME
 
+<img width="978" alt="Captura de pantalla 2023-11-15 a las 17 01 46" src="https://github.com/maribel95/TFG-LIME/assets/61268027/5b8758ab-9d33-49b1-831f-f70c81a9440c">
+
+Final degree project. LIME explanation in neural networks for facial recognition.
+
+Neural networks specialized in facial recognition are spreading in all technologies and areas of daily life. However, models are perceived as black boxes whose internal functioning maintains a certain mystery. Therefore, it has become of great interest to understand the reason for their results and what reasoning they apply.
+In this project we work with an innovative explainability technique: Local Interpretable Model-agnostic Explanations (LIME). It offers individual explanations for each sample that help understand why a model gives a prediction. This work uses a different approach for the area of facial biometrics. Based on the calculation of distances between images, explanations of the relevant facial regions are obtained without the need to confine ourselves to classification tasks.
+This is achieved using an approach based on the cosine distance between the feature vectors obtained from each image. Distance metrics are now used, resulting in a score that indicates the similarity between the images. A process of manipulating the results is followed to generate heat maps that summarize the most identifying facial features.
+The results obtained show certain divergences between the networks, especially those with the greatest difference in the number of layers. In general, all of them indicated great fixation in the nose area. Some models highlighted some features more than others and the recognition area also fluctuated depending on depth. The models also showed certain differences by ethnicity and sex.
+This new cosine distance-based approach could be leveraged to drive new studies related to facial biometrics. One idea could be to force networks to look at specific traits and see their performance. Another, the importance of image quality for success in classification. Networks can also be combined for different types of detection. These are some of the many ideas that can be explored in the future.
+
+
+# Workflow
+
+
+This work consists of the analysis of neural networks to understand what they look at to recognize faces. For this, the LIME method is applied. The idea is to obtain explanations in several examples of individual subjects. With a large enough sample, a better understanding of the overall performance of the model can be achieved.
+The main objective is to carry out a statistical study and analyze how neural networks specialized in facial recognition work. It is suggestive to explore whether the conclusions reached by these networks have certain criteria and do not arise from chance; If each one focuses on the same traits, which are the most important and the possible pre-training biases that may underlie them.
+In order to carry out the study, an orderly and structured work flow has been followed. The first thing is to decide which models to use and which database to choose. Then we proceed to apply the individual LIME explanations of each and every one of the subjects. The masks are obtained by this method, using the new approach based on cosine similarity and the regions of the face with the greatest importance for each person are obtained. The masks obtained are normalized. To do this, a series of landmarks are applied that detect the same points on each face; They are then connected and aligned. In particular, the following anatomical features are detected: eyebrows, eyes, nose, lips and contour. The transformations place the features in the same pixel regions to later obtain heat maps. In summary, the most important masks are obtained, normalized and then heat maps are created that show those areas of the face with the greatest influence on the recognition networks. Finally, several experiments are performed showing these heat maps according to different approaches. And through the Kullback–Leibler divergence, relative dendrograms are obtained to draw conclusions from the entire set of data obtained.
+
+The tasks to be performed are as follows:
+
+- [X] LIME masks creation.
+- [X] Faces and masks normalization.
+- [X] Heatmaps creation.
+- [X] Dendogram graphics creation.
+
+
+
+
+
+
+
+
+#
 <img width="978" alt="Captura de pantalla 2023-11-15 a las 16 49 54" src="https://github.com/maribel95/TFG-LIME/assets/61268027/ccbaa0c0-5bab-481f-abb9-1f6b33eb29e6">
 
 
