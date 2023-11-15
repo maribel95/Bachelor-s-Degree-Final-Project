@@ -50,65 +50,19 @@ Aunque cabe recalcar que se hicieron una serie de adaptaciones para el presente 
 # Flujo de trabajo
 
 
+Este trabajo consiste en el análisis de redes neuronales para poder entender en qué se fijan para reconocer caras. Para ello, se aplica el método LIME. La idea consiste en obtener explicaciones en varios ejemplos de sujetos individuales. Con una muestra lo suficientemente grande, se puede alcanzar una mejor comprensión del funcionamiento global del modelo.
+El objetivo principal es llevar a cabo un estudio estadístico y analizar cómo fun- cionan las redes neuronales especializadas en el reconocimiento facial. Es sugerente explorar si las conclusiones a las que llegan estas redes tienen cierto criterio y no surgen del azar; si cada una se fija en los mismos rasgos, cuáles son los más importantes y los posibles sesgos de preentrenamiento que puedan subyacer.
+Para poder poder llevar a cabo el estudio, se ha seguido un flujo de trabajo ordenado y estructurado. Lo primero es decidir qué modelos utilizar y qué base de datos elegir. Luego se procede a aplicar las explicaciones individuales de LIME de todos y cada uno de los sujetos. Se obtienen las máscaras mediante dicho método, utilizando el nuevo enfoque basado en la similitud del coseno y se consiguen las regiones de la cara con mayor importancia para cada persona. Se normalizan las máscaras obtenidas. Para ello, se aplican una serie de landmarks que detectan mismos puntos en cada cara; posteriormente se conectan y alinean. En particular, se detectan los siguientes rasgos anatómicos: cejas, ojos, nariz, labios y el contorno. Las transformaciones colocan los rasgos en las mismas regiones de píxeles para posteriormente obtener mapas de calor. En resumen, se obtienen las máscaras de mayor importancia, se normalizan y a continuación se realizan mapas de calor que muestren aquellas zonas de la cara con mayor influencia para las redes para el reconocimiento. Finalmente, se realizan varios experimentos que muestran estos mapas de calor según diferentes enfoques. Y a través de la divergencia Kullback–Leibler, se obtienen los dendrogramas relativos para sacar conclusiones de todo el conjunto de datos obtenidos.
 
-==========================                  E N G L I S H                    ===========================
+Las tareas a realizar son las siguientes: 
 
-Final Degree Project. LIME explanation in neural networks for facial recognition.
+- [X] Creación máscaras LIME.
+- [X] Normalización caras y máscaras
+- [X] Creación mapas de calor
+- [X] Creación gráficos dendrogramas.
 
-Neural networks specialized in facial recognition are spreading in all technologies and areas of daily life. However, models are perceived as black boxes whose internal functioning maintains a certain mystery. Therefore, it has become of great interest to understand the reason for their results and what reasoning they apply.
-In this project we work with an innovative explainability technique: Local Interpretable Model-agnostic Explanations (LIME). It offers individual explanations for each sample that help understand why a model gives a prediction. This work uses a different approach for the area of facial biometrics. Based on the calculation of distances between images, explanations of the relevant facial regions are obtained without the need to confine ourselves to classification tasks.
-This is achieved using an approach based on the cosine distance between the feature vectors obtained from each image. Distance metrics are now used, resulting in a score that indicates the similarity between the images. A process of manipulating the results is followed to generate heat maps that summarize the most identifying facial features.
-The results obtained show certain divergences between the networks, especially those with the greatest difference in the number of layers. In general, all of them indicated great fixation in the nose area. Some models highlighted some features more than others and the recognition area also fluctuated depending on depth. The models also showed certain differences by ethnicity and sex.
-This new cosine distance-based approach could be leveraged to drive new studies related to facial biometrics. One idea could be to force networks to look at specific traits and see their performance. Another, the importance of image quality for success in classification. Networks can also be combined for different types of detection. These are some of the many ideas that can be explored in the future.
+En la siguiente imagen queda reflejado todo el proceso a seguir:
 
-Within the main project folder there should be these three folders, which are not uploaded to the repository due to having excessive memory weight.
-- Models
-- resources
-- Datos
-
-In principle all this additional material can be easily found and downloaded at this drive link:
-https://drive.google.com/drive/folders/1FrBMYl6eoBmATRG4wk3BWuTouRE761b8?usp=sharing
-
-The following shows how each resource has been obtained individually:
-
-# Models
-
-The models were downloaded from this github repository: https://github.com/deepinsight/insightface/tree/master/model_zoo
-The ResNets trained with ArcFace were chosen. In the image you can see the chosen models. All except R100 Casia and R100 MS1MV2.
-<img width="849" alt="Captura de pantalla 2023-08-29 a las 16 15 39" src="https://github.com/maribel95/TFG-LIME/assets/61268027/cd569c30-6cad-4af6-92e4-0a7b1a5a55c5">
-
-# resources
-
-The first resource that is needed is the recognition of haarcascades faces. It can be downloaded at the following link and is simply placed inside the resources folder.
-https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_frontalface_default.xml
-
-The second one needed is the 68 face landmark detection file:
-https://github.com/italojs/facial-landmarks-recognition/blob/master/shape_predictor_68_face_landmarks.dat
-
-
-
-# Data
-
-The data was provided by the researcher Fernando Alonso Fernández. It's basically a subset of the VGG2Face database. They belong in this drive folder:https://drive.google.com/drive/folders/1cu7eGTg2zqQPEyreqvt4BGLWGca5MNB9
-
-<img width="751" alt="Captura de pantalla 2023-08-29 a las 16 33 34" src="https://github.com/maribel95/TFG-LIME/assets/61268027/bff05eee-ef16-4d04-9834-3816a2661020">
-
-Although it should be noted that a series of adaptations were made for this project. All individual folders were uploaded one directory and the test folder was removed. So the structure to access the folders of each of the users (nxxxxxx format) looks like this.
-
-
-<img width="130" alt="Captura de pantalla 2023-08-29 a las 16 35 43" src="https://github.com/maribel95/TFG-LIME/assets/61268027/6fc52846-c282-4fec-9f0b-740fec8d580b">
-
-
-# Workflow
-
-
-
-
-
-
-
-
-
-
+<img width="994" alt="Captura de pantalla 2023-11-15 a las 9 46 17" src="https://github.com/maribel95/TFG-LIME/assets/61268027/8ed23970-337b-4fbf-ba90-52ab00ee52ed">
 
 
