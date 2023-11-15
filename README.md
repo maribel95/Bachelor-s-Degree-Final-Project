@@ -25,10 +25,11 @@ The tasks to be performed are as follows:
 - [X] Heatmaps creation.
 - [X] Dendogram graphics creation.
 
+The following image shows the entire process to follow:
 
 
 
-
+<img width="985" alt="Captura de pantalla 2023-11-15 a las 11 10 21" src="https://github.com/maribel95/TFG-LIME/assets/61268027/a68f3d76-b5ac-46e7-88ac-fc387f7884f9">
 
 
 
