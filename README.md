@@ -1,6 +1,7 @@
 # TFG-LIME
 
-=======================                  C A S T E L L A N O                    =========================
+<img width="978" alt="Captura de pantalla 2023-11-15 a las 16 49 54" src="https://github.com/maribel95/TFG-LIME/assets/61268027/ccbaa0c0-5bab-481f-abb9-1f6b33eb29e6">
+
 
 Trabajo final de grado. Explicación LIME en redes neuronales para reconocimiento facial.
 
