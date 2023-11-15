@@ -31,7 +31,7 @@ The following image shows the entire process to follow:
 
 <img width="985" alt="Captura de pantalla 2023-11-15 a las 11 10 21" src="https://github.com/maribel95/TFG-LIME/assets/61268027/a68f3d76-b5ac-46e7-88ac-fc387f7884f9">
 
-### Explicaciones LIME
+### LIME explanations
 In general, the feature spaces that deep learning models deal with have non-linear boundaries and high complexity. To explain these models, LIME is used, which is a novel explainability technique that first appeared in 2016 and whose intention is to clarify the predictions of any classifier. The idea is to build a simple and easy-to-interpret local model based on particular predictions. Based on various representative samples, the results are extrapolated to a more general level, thus giving a global explanation of the model.
 
 - The first thing to do is generate several disturbed samples around it. These samples present slight variations with respect to the original, so they are all located in a very close dimensional space.
@@ -49,6 +49,26 @@ The data processing process is as follows:
 And the image processing process is this:
 
 <img width="775" alt="Captura de pantalla 2023-11-15 a las 17 46 50" src="https://github.com/maribel95/TFG-LIME/assets/61268027/a1256d66-b7d4-45d7-9481-686af3054e67">
+
+### Images normalization
+
+Once the LIME explanations are obtained, the next step is normalization to align and standardize the faces. The aim is to reduce variability in poses and facial expressions, so that all images maintain the same orientation and alignment.
+
+In this phase the following tasks must be carried out:
+- [X] Face detection. The first step for normalization is to apply a face detector that focuses on the person and ignores objects that may be a distraction when applying landmarks. In this case, the Haarcascade face detector from the OpenCV Python library is used.
+- [X] Landmark Detection. Accurately identifying landmarks within the face is the second step in normalizing. Facial landmark detectors are applied that place features into a uniform and identical template for all other faces.
+An approach is used that involves a descriptor that detects 68 facial landmarks. It adapts to each different face, focusing on the most representative points: mouth, right and left eyebrow, right and left eye, nose and jaw.
+- [X] Mesh creation using Delaunay triangularization. The last step is the creation of a mesh formed by triangles that satisfy the Delaunay property and that connects the reference points of the face. Landmarks act as control points, they are the connectors of the vertices and it is around these where the triangles are built.
+
+The results would be the following:
+
+
+
+
+
+
+
+
 
 
 
