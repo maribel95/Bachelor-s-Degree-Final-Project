@@ -41,7 +41,8 @@ El proceso de tratamiento de datos es el siguiente:
 <img width="975" alt="Captura de pantalla 2023-11-15 a las 10 44 46" src="https://github.com/maribel95/TFG-LIME/assets/61268027/45675563-14aa-4dcd-91e3-611d4ffda69e">
 
 Y el proceso de tratamiento de imágenes es este:
-<img width="985" alt="Captura de pantalla 2023-11-15 a las 10 48 04" src="https://github.com/maribel95/TFG-LIME/assets/61268027/9805cdbf-22c0-4bbd-99ef-5e989485a4f2">
+
+<img width="983" alt="Captura de pantalla 2023-11-15 a las 10 36 52" src="https://github.com/maribel95/TFG-LIME/assets/61268027/0440394e-6ed2-449f-b3cc-eb18f9525da2">
 
 
 ### Normalización imágenes
