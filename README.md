@@ -88,17 +88,10 @@ KL is used to see how similar two distribution functions are, where large distan
 ### Heatmap comparison example
 
 
-<img width="775" alt="Captura de pantalla 2023-11-15 a las 19 54 34" src="https://github.com/maribel95/TFG-LIME/assets/61268027/df69621a-41b8-4ee4-8b73-ddfe566a14ec">
 
+<img width="775" alt="Captura de pantalla 2023-11-17 a las 6 55 32" src="https://github.com/maribel95/Bachelor-s-Degree-Final-Project/assets/61268027/cff6be28-ecbb-48cb-9368-70ccb3385b80">
 
-
-Final Degree Project. LIME explanation in neural networks for facial recognition.
-
-Neural networks specialized in facial recognition are spreading in all technologies and areas of daily life. However, models are perceived as black boxes whose internal functioning maintains a certain mystery. Therefore, it has become of great interest to understand the reason for their results and what reasoning they apply.
-In this project we work with an innovative explainability technique: Local Interpretable Model-agnostic Explanations (LIME). It offers individual explanations for each sample that help understand why a model gives a prediction. This work uses a different approach for the area of facial biometrics. Based on the calculation of distances between images, explanations of the relevant facial regions are obtained without the need to confine ourselves to classification tasks.
-This is achieved using an approach based on the cosine distance between the feature vectors obtained from each image. Distance metrics are now used, resulting in a score that indicates the similarity between the images. A process of manipulating the results is followed to generate heat maps that summarize the most identifying facial features.
-The results obtained show certain divergences between the networks, especially those with the greatest difference in the number of layers. In general, all of them indicated great fixation in the nose area. Some models highlighted some features more than others and the recognition area also fluctuated depending on depth. The models also showed certain differences by ethnicity and sex.
-This new cosine distance-based approach could be leveraged to drive new studies related to facial biometrics. One idea could be to force networks to look at specific traits and see their performance. Another, the importance of image quality for success in classification. Networks can also be combined for different types of detection. These are some of the many ideas that can be explored in the future.
+# Project resources:
 
 Within the main project folder there should be these three folders, which are not uploaded to the repository due to having excessive memory weight.
 - Models
